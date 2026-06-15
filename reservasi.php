@@ -276,7 +276,7 @@ body { background: var(--kk-dark) !important; }
     transform: scale(1.08);
 }
 </style>
-<div class="container py-4" style="max-width:860px">
+<div class="container py-4" style="max-width:1080px">
     <?php if ($pesan_sukses): ?>
         <div class="alert rv-alert-ok d-flex align-items-center gap-2 mb-4">
             <i class="bi bi-check-circle-fill fs-5"></i>

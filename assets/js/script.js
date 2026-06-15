@@ -522,8 +522,8 @@ $(document).ready(function () {
                                 <div class="success-checkmark-circle">
                                     <i class="bi bi-check-lg"></i>
                                 </div>
-                                <h3 class="text-white fw-extrabold mb-3">Reservasi Berhasil!</h3>
-                                <p class="text-white-50 mb-4 px-md-5" style="font-size: 1.05rem;">
+                                <h3 class="text-dark fw-bold mb-3">Reservasi Berhasil!</h3>
+                                <p class="text-muted mb-4 px-md-5" style="font-size: 1.05rem;">
                                     ${res.message}
                                 </p>
                                 <button type="button" class="btn btn-primary px-5 py-2.5 fw-bold text-white rounded-3 shadow" data-bs-dismiss="modal">
