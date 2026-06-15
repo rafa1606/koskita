@@ -122,7 +122,7 @@ $page_title = 'Kelola Kamar | ' . $kos['nama_kos'];
 include '../includes/header.php';
 ?>
 
-<main class="flex-grow-1 py-5" style="background:#0d1117">
+<main class="flex-grow-1 py-5" style="background:#f8fafc !important;">
 <div class="container">
 
     
@@ -150,7 +150,7 @@ include '../includes/header.php';
 
     <?php if ($success): ?>
     <div class="alert border-0 rounded-3 mb-4 d-flex align-items-center gap-2"
-         style="background:rgba(34,197,94,.12);color:#4ade80">
+         style="background:#f0fdf4;color:#166534">
         <i class="bi bi-check-circle-fill flex-shrink-0"></i>
         <?= htmlspecialchars($success) ?>
     </div>
@@ -170,7 +170,7 @@ include '../includes/header.php';
 
         
         <div class="col-lg-4">
-            <div class="card border-0 shadow-sm" style="border-radius:16px;position:sticky;top:80px">
+            <div class="card border-0" style="border-radius:16px;position:sticky;top:80px;box-shadow:0 12px 32px rgba(0,0,0,0.08)">
                 <div class="card-body p-4">
                     <h6 class="fw-bold mb-4" style="font-size:.95rem">
                         <i class="bi bi-<?= $edit_id ? 'pencil' : 'plus-circle' ?> me-2" style="color:var(--kk-blue)"></i>
@@ -281,14 +281,14 @@ include '../includes/header.php';
 
         
         <div class="col-lg-8">
-            <div class="card border-0 shadow-sm" style="border-radius:16px;overflow:hidden">
-                <div class="card-header border-0 px-4 py-3" style="background:#1c2128">
+            <div class="card border-0" style="border-radius:16px;overflow:hidden;box-shadow:0 12px 32px rgba(0,0,0,0.08)">
+                <div class="card-header px-4 py-3 bg-white" style="border-bottom: 1px solid #f1f5f9 !important;">
                     <div class="d-flex align-items-center justify-content-between">
                         <span class="fw-semibold" style="font-size:.9rem">
                             Daftar Kamar
                         </span>
                         <span class="badge rounded-pill px-3 py-2"
-                              style="background:rgba(37,99,235,.2);color:#60a5fa;font-size:.75rem">
+                              style="background:#eff6ff;color:#2563eb;font-size:.75rem">
                             <?= count($kamar_list) ?> kamar
                         </span>
                     </div>
@@ -302,14 +302,14 @@ include '../includes/header.php';
                 <?php else: ?>
                 <div class="table-responsive">
                     <table class="table table-hover align-middle mb-0" style="font-size:.87rem">
-                        <thead style="background:rgba(255,255,255,.03)">
+                        <thead style="background:#f8fafc">
                             <tr>
-                                <th class="fw-semibold px-4 py-3" style="font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;color:rgba(255,255,255,.45)">No.</th>
-                                <th class="fw-semibold py-3" style="font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;color:rgba(255,255,255,.45)">Kamar</th>
-                                <th class="fw-semibold py-3" style="font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;color:rgba(255,255,255,.45)">Tipe</th>
-                                <th class="fw-semibold py-3" style="font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;color:rgba(255,255,255,.45)">Harga</th>
-                                <th class="fw-semibold py-3" style="font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;color:rgba(255,255,255,.45)">Status</th>
-                                <th class="fw-semibold pe-4 py-3" style="font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;color:rgba(255,255,255,.45)">Aksi</th>
+                                <th class="fw-semibold px-4 py-3" style="font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;color:var(--kk-muted)">No.</th>
+                                <th class="fw-semibold py-3" style="font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;color:var(--kk-muted)">Kamar</th>
+                                <th class="fw-semibold py-3" style="font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;color:var(--kk-muted)">Tipe</th>
+                                <th class="fw-semibold py-3" style="font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;color:var(--kk-muted)">Harga</th>
+                                <th class="fw-semibold py-3" style="font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;color:var(--kk-muted)">Status</th>
+                                <th class="fw-semibold pe-4 py-3" style="font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;color:var(--kk-muted)">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -323,7 +323,7 @@ include '../includes/header.php';
                                          style="width:40px;height:32px;object-fit:cover;border-radius:6px" alt="">
                                     <?php else: ?>
                                     <div class="d-flex align-items-center justify-content-center rounded-2"
-                                         style="width:40px;height:32px;background:rgba(255,255,255,.07);color:rgba(255,255,255,.3)">
+                                         style="width:40px;height:32px;background:#f1f5f9;color:var(--kk-muted)">
                                         <i class="bi bi-door-closed" style="font-size:.8rem"></i>
                                     </div>
                                     <?php endif; ?>
