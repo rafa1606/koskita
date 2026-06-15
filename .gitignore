@@ -1,0 +1,17 @@
+# Local config 
+.claude/
+
+# VS Code
+.vscode/
+
+# XAMPP / PHP sensitive
+config/db.php
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Upload files
+# assets/img/kos/
+# assets/img/profil/

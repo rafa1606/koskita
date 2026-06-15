@@ -1,0 +1,2 @@
+# Custom Error Document for 404
+ErrorDocument 404 /koskita/404.php
