@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+  </defs>
+  <!-- Background Rounded Square -->
+  <rect x="5" y="5" width="90" height="90" rx="24" fill="url(#logo-grad)" />
+  <!-- House Symbol -->
+  <path d="M50 22 L18 48 H28 V78 H44 V60 H56 V78 H72 V48 H82 Z" fill="#ffffff" />
+  <!-- Heart Symbol inside House -->
+  <path d="M50 49 C50 49 43 44 43 41 C43 38 47 38 50 40 C53 38 57 38 57 41 C57 44 50 49 50 49 Z" fill="#3b82f6" />
+</svg>
