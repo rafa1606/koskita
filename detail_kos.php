@@ -82,10 +82,10 @@ include 'includes/header.php';
     margin-bottom: 2rem; 
     font-weight: 500;
 }
-.dk-breadcrumb a { color: rgba(255,255,255,.55); text-decoration: none; transition: color 0.2s; }
+.dk-breadcrumb a { color: var(--kk-muted); text-decoration: none; transition: color 0.2s; }
 .dk-breadcrumb a:hover { color: var(--kk-blue); }
-.dk-breadcrumb .sep { color: rgba(255,255,255,.2); margin: 0 .6rem; }
-.dk-breadcrumb .cur { color: rgba(255,255,255,.85); font-weight: 600; }
+.dk-breadcrumb .sep { color: var(--kk-border); margin: 0 .6rem; }
+.dk-breadcrumb .cur { color: var(--kk-text); font-weight: 600; }
 .dk-hero-img {
     width: 100%; height: 440px; object-fit: cover;
     border-radius: var(--kk-radius-lg);
@@ -97,7 +97,7 @@ include 'includes/header.php';
     width: 100%; height: 440px; border-radius: var(--kk-radius-lg);
     background: #f1f5f9;
     display: flex; align-items: center; justify-content: center;
-    font-size: 6rem; color: rgba(255,255,255,.15);
+    font-size: 6rem; color: rgba(0,0,0,.15);
     box-shadow: var(--kk-shadow-md);
     border: 1px solid var(--kk-border);
 }
@@ -111,23 +111,23 @@ include 'includes/header.php';
 }
 .dk-kos-name {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 2.2rem; font-weight: 800; color: #fff;
+    font-size: 2.2rem; font-weight: 800; color: var(--kk-text);
     line-height: 1.2; margin: 0 0 .75rem;
     letter-spacing: -0.03em;
 }
 .dk-alamat {
-    font-size: 1.1rem; color: rgba(255,255,255,.6);
+    font-size: 1.1rem; color: var(--kk-muted);
     display: flex; align-items: flex-start; gap: 8px;
     margin-bottom: 1.25rem;
 }
 .dk-alamat i { color: var(--kk-orange); flex-shrink: 0; margin-top: 3px; font-size: 1.2rem; }
 .dk-desc {
-    font-size: 1.1rem; color: rgba(255,255,255,.75);
+    font-size: 1.1rem; color: var(--kk-text);
     line-height: 1.8; margin: 0;
 }
 .dk-panel-title {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: 1.25rem; font-weight: 800; color: #fff;
+    font-size: 1.25rem; font-weight: 800; color: var(--kk-text);
     margin: 0 0 1.5rem;
     display: flex; align-items: center; gap: 10px;
     letter-spacing: -0.01em;
@@ -140,17 +140,17 @@ include 'includes/header.php';
 }
 .dk-fasil-item {
     display: flex; align-items: center; gap: 10px;
-    background: rgba(255,255,255,.03);
-    border: 1px solid rgba(255,255,255,.05);
+    background: var(--kk-surface-2);
+    border: 1px solid var(--kk-border);
     border-radius: var(--kk-radius-sm);
     padding: .8rem 1.1rem;
-    font-size: 1rem; color: rgba(255,255,255,.8);
+    font-size: 1rem; color: var(--kk-text);
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .dk-fasil-item:hover {
     background: rgba(59, 130, 246, 0.08);
     border-color: rgba(59, 130, 246, 0.2);
-    color: #fff;
+    color: var(--kk-text);
     transform: translateY(-1px);
 }
 .dk-fasil-item i { color: var(--kk-blue); font-size: 1.15rem; flex-shrink: 0; }
@@ -166,27 +166,27 @@ include 'includes/header.php';
     margin-bottom: 1.5rem;
     box-shadow: var(--kk-shadow-md);
 }
-.dk-price-label { font-size: 0.95rem; color: rgba(255,255,255,.45); margin-bottom: 6px; font-weight: 500; }
+.dk-price-label { font-size: 0.95rem; color: var(--kk-muted); margin-bottom: 6px; font-weight: 500; }
 .dk-price-num {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 2rem; font-weight: 800; color: var(--kk-orange);
     line-height: 1;
 }
-.dk-price-unit { font-size: 1rem; color: rgba(255,255,255,.45); font-weight: 500; }
+.dk-price-unit { font-size: 1rem; color: var(--kk-muted); font-weight: 500; }
 .dk-avail-badge {
     display: inline-flex; align-items: center; gap: 8px;
-    background: rgba(22,163,74,.12);
-    border: 1px solid rgba(22,163,74,.25);
-    color: #4ade80; border-radius: 12px;
+    background: #dcfce7;
+    border: 1px solid #bbf7d0;
+    color: #166534; border-radius: 12px;
     font-size: 1rem; font-weight: 700;
     padding: .6rem 1.2rem; margin: 1.25rem 0;
     width: 100%; justify-content: center;
 }
 .dk-full-badge {
     display: inline-flex; align-items: center; gap: 8px;
-    background: rgba(220,38,38,.12);
-    border: 1px solid rgba(220,38,38,.25);
-    color: #f87171; border-radius: 12px;
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+    color: #991b1b; border-radius: 12px;
     font-size: 1rem; font-weight: 700;
     padding: .6rem 1.2rem; margin: 1.25rem 0;
     width: 100%; justify-content: center;
@@ -212,9 +212,9 @@ include 'includes/header.php';
 }
 .dk-btn-pesan:disabled,
 .dk-btn-pesan.disabled {
-    background: rgba(255,255,255,.05) !important; color: rgba(255,255,255,.25) !important;
+    background: #f1f5f9 !important; color: #94a3b8 !important;
     cursor: not-allowed; box-shadow: none !important; transform: none !important;
-    border: 1px solid rgba(255,255,255,.05) !important;
+    border: 1px solid #e2e8f0 !important;
 }
 .dk-btn-login {
     display: flex; align-items: center; justify-content: center; gap: 8px;
@@ -231,13 +231,13 @@ include 'includes/header.php';
     display: flex; align-items: center; justify-content: center; gap: 8px;
     width: 100%; padding: 0.85rem;
     background: transparent;
-    border: 1px solid rgba(255,255,255,.12); color: rgba(255,255,255,.55);
+    border: 1px solid var(--kk-border); color: var(--kk-muted);
     border-radius: var(--kk-radius-sm);
     font-size: 1.05rem; font-weight: 600;
     text-decoration: none;
     transition: all .2s;
 }
-.dk-btn-back:hover { border-color: rgba(255,255,255,.3); color: #fff; }
+.dk-btn-back:hover { border-color: var(--kk-blue); color: var(--kk-blue); }
 .dk-owner-avatar {
     width: 48px; height: 48px; border-radius: 50%; flex-shrink: 0;
     background: linear-gradient(135deg, var(--kk-blue-light), var(--kk-blue));
@@ -247,15 +247,15 @@ include 'includes/header.php';
     box-shadow: 0 4px 12px rgba(59,130,246,0.25);
 }
 .dk-owner-name {
-    font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 2px;
+    font-size: 1.05rem; font-weight: 700; color: var(--kk-text); margin-bottom: 2px;
 }
 .dk-owner-role {
-    font-size: 0.85rem; color: rgba(255,255,255,.45);
+    font-size: 0.85rem; color: var(--kk-muted);
     text-transform: uppercase; letter-spacing: .06em;
 }
 .dk-kamar-card {
-    background: rgba(255,255,255,.015);
-    border: 1px solid rgba(255,255,255,.05);
+    background: var(--kk-surface-2);
+    border: 1px solid var(--kk-border);
     border-radius: var(--kk-radius-sm);
     padding: 1.25rem 1.5rem;
     display: flex; align-items: center; justify-content: space-between;
@@ -265,26 +265,27 @@ include 'includes/header.php';
 }
 .dk-kamar-card:last-child { margin-bottom: 0; }
 .dk-kamar-card:hover { 
-    background: rgba(255,255,255,.04); 
+    background: #ffffff; 
     border-color: rgba(59, 130, 246, 0.3) !important;
     transform: scale(1.01) translateY(-1px);
+    box-shadow: var(--kk-shadow);
 }
 .dk-kamar-num {
-    font-size: 1.2rem; font-weight: 800; color: #fff;
+    font-size: 1.2rem; font-weight: 800; color: var(--kk-text);
 }
 .dk-kamar-tipe {
-    font-size: 1rem; color: rgba(255,255,255,.5);
+    font-size: 1rem; color: var(--kk-muted);
     margin-top: 2px;
 }
 .dk-kamar-harga {
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 1.3rem; font-weight: 800; color: var(--kk-orange); white-space: nowrap;
 }
-.dk-kamar-harga small { font-size: 0.9rem; color: rgba(255,255,255,.4); font-weight: 500; }
+.dk-kamar-harga small { font-size: 0.9rem; color: var(--kk-muted); font-weight: 500; }
 .dk-kamar-penuh {
-    font-size: 0.88rem; color: #f87171; font-weight: 700;
-    padding: 4px 12px; background: rgba(220,38,38,.12);
-    border: 1px solid rgba(220,38,38,.25);
+    font-size: 0.88rem; color: #ef4444; font-weight: 700;
+    padding: 4px 12px; background: #fee2e2;
+    border: 1px solid #fecaca;
     border-radius: 50px;
 }
 </style>
@@ -316,13 +317,7 @@ include 'includes/header.php';
                     <i class="bi bi-geo-alt-fill"></i>
                     <span><?= htmlspecialchars($kos['alamat']) ?></span>
                 </div>
-                <?php if (!empty($kos['latitude']) && !empty($kos['longitude'])): ?>
-                <a href="https://maps.google.com/?q=<?= $kos['latitude'] ?>,<?= $kos['longitude'] ?>"
-                   target="_blank" rel="noopener"
-                   style="font-size:.82rem;color:#3b82f6;text-decoration:none;display:inline-flex;align-items:center;gap:5px">
-                    <i class="bi bi-map"></i>Lihat di Google Maps
-                </a>
-                <?php endif; ?>
+
             </div>
             <?php if (!empty($kos['deskripsi'])): ?>
             <div class="dk-panel">
@@ -345,11 +340,17 @@ include 'includes/header.php';
                 </div>
             </div>
             <?php endif; ?>
+            <?php if (!empty($kos['latitude']) && !empty($kos['longitude'])): ?>
+            <div class="dk-panel">
+                <p class="dk-panel-title"><i class="bi bi-map"></i>Lokasi</p>
+                <iframe src="https://maps.google.com/maps?q=<?= $kos['latitude'] ?>,<?= $kos['longitude'] ?>&z=15&output=embed" width="100%" height="350px" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <?php endif; ?>
             <?php if (!empty($kamar_list)): ?>
             <div class="dk-panel">
                 <p class="dk-panel-title">
                     <i class="bi bi-door-open-fill"></i>Kamar Tersedia
-                    <span style="font-size:.78rem;font-weight:500;color:rgba(255,255,255,.4);margin-left:auto">
+                    <span style="font-size:.78rem;font-weight:500;color:var(--kk-muted);margin-left:auto">
                         <?= count($kamar_list) ?> kamar total
                     </span>
                 </p>

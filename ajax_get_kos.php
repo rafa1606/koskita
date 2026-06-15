@@ -131,6 +131,14 @@ $inisial_pemilik = $pemilik ? strtoupper(substr($pemilik['nama'], 0, 1)) : 'P';
                 </div>
             </div>
         <?php endif; ?>
+        <?php if (!empty($kos['latitude']) && !empty($kos['longitude'])): ?>
+            <div class="mb-4 p-3 rounded-4" style="background: #f8fafc; border: 1px solid #e2e8f0;">
+                <p class="text-dark fw-bold mb-3 d-flex align-items-center gap-2" style="font-size: 1rem;">
+                    <i class="bi bi-map text-primary"></i> Lokasi
+                </p>
+                <iframe src="https://maps.google.com/maps?q=<?= $kos['latitude'] ?>,<?= $kos['longitude'] ?>&z=15&output=embed" width="100%" height="350px" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        <?php endif; ?>
         <?php if (!empty($kamar_list)): ?>
             <div class="mb-4">
                 <p class="text-dark fw-bold mb-3 d-flex align-items-center justify-content-between" style="font-size: 1rem;">
